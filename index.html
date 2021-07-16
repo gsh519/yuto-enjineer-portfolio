@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuto Portfolio</title>
+  <!-- reset css -->
+  <link rel="stylesheet" href="./css/reset.css">
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">   
+  
+  <link href="./js/slick-theme.css" rel="stylesheet" type="text/css">
+  <link href="./js/slick.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./css/animation.css">
+
+  <!-- jquery -->
+  <script src="./js/jquery-3.5.1.min.js" defer></script>
+
+  <script type="text/javascript" src="./js/slick.min.js" defer></script>
+
+  <script src="./js/index.js" defer></script>
+</head>
+<body>
+  <!-- ローディング画面 -->
+  <div id="loading" class="loading active">
+    <div class="loadingText">Welcome To My Portfolio</div>
+  </div>
+
+
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="l-inner">
+      <nav class="navbar">
+        <h1 class="title"><a href="/">Portfolio</a></h1>
+        <!-- sp版 ハンバーガメニュー -->
+        <div id="wrapper" class="wrapper">
+          <div class="circle icon">
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+          </div>
+        </div>
+        
+        <!-- pc版 メニュー -->
+        <ul class="menu">
+          <li class="menu__list active"><a href="#home">Home</a></li>
+          <li class="menu__list"><a href="#about">About</a></li>
+          <li class="menu__list"><a href="#skill">Skills</a></li>
+          <li class="menu__list"><a href="#work">Works</a></li>
+          <li class="menu__list"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="menuModal" id="menuModal">
+    <ul class="menuModal__list">
+      <li class="menuModal__list__item"><a href="#home">Home</a></li>
+      <li class="menuModal__list__item"><a href="#about">About</a></li>
+      <li class="menuModal__list__item"><a href="#skill">Skills</a></li>
+      <li class="menuModal__list__item"><a href="#work">Works</a></li>
+      <li class="menuModal__list__item"><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Home -->
+  <section class="home sec" id="home">
+    <div class="l-inner">
+      <div class="home-content">
+        <div class="home-content__img">
+          <img src="./img/IMG_0531.a2a29a2a.jpeg">
+        </div>
+        <div class="home-content__txt">
+          <h2>Hi, I am<br><span class="name">Yuto Eguchi</span></h2>
+          <p>はじめまして！ここはエンジニアゆうとのポートフォリオサイトです。
+            これまでに手がけた制作物、身につけたスキルをまとめています。
+            あなたに、私のことをもっと深く知ってほしいと思って作りました。
+            どうぞゆっくりとサイト内を散策ください！！</p>
+          <a class="link" href="https://github.com/gsh519"><i class="fab fa-github"></i>Github</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <!-- About -->
+  <section class="about sec" id="about">
+    <div class="l-inner">
+      <h2 class="sec-ttl ttl">About Me<span>Who I am</span></h2>
+      <div class="about-content content1">
+        <div class="about-content__img ht"><img src="./img/undraw_Coding_re_iv62.svg"></div>
+        <div class="about-content__txt">
+          <p class="intro">現在私はWebコーダー（アルバイト）として半年ほど働いています。仕事内容は大手通販サイトの運用を行っています。コーディング指示書とAdobeXDのデザインデータをもとにHTML、CSS、JavaScript(Jquery)を使用してマークアップしていく仕事です。更新作業や新規ページの作成などをしています。次のステップとしてパートナー契約していただける会社を探しています。今の会社ではECサイトのCMSとしてDrupalを使っているのですが個人的にWordPressを勉強しているのでWordPressの案件にも携わっていけたらと考えています。</p>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="about-content__txt">
+          <ul class="list">
+            <li>大学<span>関西大学</span></li>
+            <li>出身<span>兵庫県</span></li>
+            <li>年齢<span>22歳</span></li>
+            
+          </ul>
+          <ul class="list">
+            <li>好きなスポーツ<span>バスケットボール、野球、サッカー</span></li>
+            <li>趣味<span>映画鑑賞、ドライブ</span></li>
+            <li>好きな言葉<span>死ぬこと以外かすり傷</span></li>
+          </ul>
+        </div>
+        <div class="about-content__img"><img src="./img/undraw_Hello_re_3evm.svg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skill sec" id="skill">
+    <div class="l-inner">
+      <h2 class="ttl">My Skills<span>What I do</span></h2>
+      <div class="skill-content">
+        <ul class="slider">
+          <li class="list">
+            <div class="card card-skin">
+              <div class="card__imgframe"><i class="fab fa-html5"></i></div>
+              <div class="card__textbox">
+                <div class="card__titletext">
+                  HTML
+                </div>
+                <div class="card__overviewtext">
+                  問題なく業務で使用することができるレベルです！
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list">
+            <div class="card card-skin">
+              <div class="card__imgframe">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="card__textbox">
+                <div class="card__titletext">
+                  CSS
+                </div>
+                <div class="card__overviewtext">
+                  問題なく業務で使用することができるレベルです！
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list">
+            <div class="card card-skin">
+              <div class="card__imgframe">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <div class="card__textbox">
+                <div class="card__titletext">
+                  JavaScript
+                </div>
+                <div class="card__overviewtext">
+                  最近はReactに移行しつつありますが、シンプルなWebサイト等ではjQueryを使っています
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list">
+            <div class="card card-skin">
+              <div class="card__imgframe">
+                <i class="fab fa-react"></i>
+              </div>
+              <div class="card__textbox">
+                <div class="card__titletext">
+                  React
+                </div>
+                <div class="card__overviewtext">
+                  業務では使用したことがないのですが、個人的に勉強してきました！簡単なアプリケーションならReactを使って作ることができます。
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list">
+            <div class="card card-skin">
+              <div class="card__imgframe">
+                <i class="fab fa-php"></i>
+              </div>
+              <div class="card__textbox">
+                <div class="card__titletext">
+                  PHP
+                </div>
+                <div class="card__overviewtext">
+                  WordPressを使用するときに学びました。基本的なことなら問題なく使用できるレベルであると思います！
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list">
+            <div class="card card-skin">
+              <div class="card__imgframe">
+                <i class="fab fa-bootstrap"></i>
+              </div>
+              <div class="card__textbox">
+                <div class="card__titletext">
+                  Bootstrap
+                </div>
+                <div class="card__overviewtext">
+                  業務でもかなり頻繁に使用している技術です。
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list">
+            <div class="card card-skin">
+              <div class="card__imgframe">
+                <i class="fab fa-wordpress"></i>
+              </div>
+              <div class="card__textbox">
+                <div class="card__titletext">
+                  WordPress
+                </div>
+                <div class="card__overviewtext">
+                  会社のCMSとしてはDrupalを使っているのですが個人的に勉強しています。
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list">
+            <div class="card card-skin">
+              <div class="card__imgframe">
+                <i class="fab fa-sass"></i>
+              </div>
+              <div class="card__textbox">
+                <div class="card__titletext">
+                  Sass
+                </div>
+                <div class="card__overviewtext">
+                  会社では必ず使用しています。また、CSSの記法としてBEMの書き方を利用しています。
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="other">
+          <h3 class="other__ttl">その他使用ツール</h3>
+          <ul class="other__list">
+            <li>Github</li>
+            <li>VsCode</li>
+            <li>Teams</li>
+            <li>Backlog</li>
+            <li>Filezila</li>
+            <li>AdobeXD</li>
+            <li>SourceTree</li>
+          </ul>
+          <small>※使用ツールはすべて業務で使用しているものです。</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section class="work sec" id="work">
+    <div class="l-inner">
+      <h2 class="ttl">My Works<span>What I made</span></h2>
+      <div class="work-content">
+        <p class="work-content__txt">私が今まで制作してきた成果物を紹介します。</p>
+        <ul class="work-content__flex">
+          <li class="item" id="item0">
+            <a>
+              <div class="hover-parent">
+                <img src="./img/peasmile.png">
+              </div>
+            </a>
+          </li>
+          <li class="item" id="item1">
+            <a>
+              <div class="hover-parent">
+                <img src="./img/xeory.png">
+              </div>
+            </a>
+          </li>
+          <li class="item" id="item2">
+            <a>
+              <div class="hover-parent">
+                <img src="./img/pon-design.png">
+              </div>
+            </a>
+          </li>
+          <li class="item" id="item3">
+            <a>
+              <div class="hover-parent">
+                <img src="./img/password-generator.png">
+              </div>
+            </a>
+          </li>
+          <li class="item" id="item4">
+            <a>
+              <div class="hover-parent">
+                <img src="./img/todo.png">
+              </div>
+            </a>
+          </li>
+          <li class="item" id="item5">
+            <a>
+              <div class="hover-parent">
+                <img src="./img/movie.png">
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </section>
+
+  <div class="modal" id="modal0">
+    <div class="modal-content">
+      <div class="modal-content__body">
+        <div class="modal-content__body__txt">
+          <div class="item">
+            <h2 class="item__ttl">peasmile</h2>
+            <p>WordPressを使って作ったWebサイトになります。このサイトは現在働いている会社に入るときにコーディングのテストとしてだされたものを後に自分でWordPressを使ってCMS化したものです。あまり複雑な部分はなく比較的簡単なサイトではありますがこのぐらいのレベルのサイトなら問題なくWordPressを使用して作ることができると思います。</p>
+            <ul>
+              <li><a target="_blank" href="https://ctag-dev6.xyz/peasmile/">Demo</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h2 class="item__ttl">使用言語など</h2>
+            <p>WordPress, HTML, CSS(SASS), Jquery</p>
+          </div>
+        </div>
+        <div class="modal-content__body__img">
+          <p><img src="./img/peasmile.png"></p>
+        </div>
+        <i class="far fa-times-circle closeBtn" id="closeBtn0"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <div class="modal-content__body">
+        <div class="modal-content__body__txt">
+          <div class="item">
+            <h2 class="item__ttl">Xeory Extension</h2>
+            <p>このサイトは模写コーディングをデザインデータから実際にコーディングできるようにとネットに公開されているものを使わせていただいて作ったサイトです。これを作ったときはまだ働く前だったので実務に入る前の練習としては実際にデザインデータからコーディングしていく練習としては良かったと思います。</p>
+            <ul>
+              <li><a target="_blank" href="http://twy.xsrv.jp/portfolio/examples/01/#">Demo</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h2 class="item__ttl">使用言語など</h2>
+            <p>HTML, CSS(SASS), Jquery AdobeXD</p>
+          </div>
+        </div>
+        <div class="modal-content__body__img">
+          <p><img src="./img/xeory.png"></p>
+        </div>
+        <i class="far fa-times-circle closeBtn" id="closeBtn1"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <div class="modal-content__body">
+        <div class="modal-content__body__txt">
+          <div class="item">
+            <h2 class="item__ttl">Pon Design</h2>
+            <p>このサイトもネットから拾ってきたものでデザインデータからコーディングして作ったものです。企業のホームページで、ページ数などもある程度ボリュームがあるサイトになっています。このサイトはWordPressを導入していないのですが今後導入していきたいと考えています。</p>
+            <ul>
+              <li><a target="_blank" href="https://pon-design.netlify.app/">Demo</a></li>
+              <li><a href="https://github.com/gsh519/Password-Generator">Github</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h2 class="item__ttl">使用言語など</h2>
+            <p>HTML, CSS(SASS), Jquery, AdobeXD</p>
+          </div>
+        </div>
+        <div class="modal-content__body__img">
+          <p><img src="./img/pon-design.png"></p>
+        </div>
+        <i class="far fa-times-circle closeBtn" id="closeBtn2"></i>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <div class="modal-content__body">
+        <div class="modal-content__body__txt">
+          <div class="item">
+            <h2 class="item__ttl">Password Generator</h2>
+            <p>これは自分でJavaScriptを使って作ったツールです。パスワードに必要な文字数や含めたい文字を選択することによってその条件にあうパスワードを自動で作ってくれるというツールになっています。</p>
+            <ul>
+              <li><a target="_blank" href="http://password-generator-tool.net/">Demo</a></li>
+              <li><a href="#">Github</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h2 class="item__ttl">使用言語など</h2>
+            <p>HTML, CSS(SASS), JavaScript</p>
+          </div>
+        </div>
+        <div class="modal-content__body__img">
+          <p><img src="./img/password-generator.png"></p>
+        </div>
+        <i class="far fa-times-circle closeBtn" id="closeBtn3"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal4">
+    <div class="modal-content">
+      <div class="modal-content__body">
+        <div class="modal-content__body__txt">
+          <div class="item">
+            <h2 class="item__ttl">ToDo App</h2>
+            <p>はじめてReactを使って作ったTODOリストです。daily, work, trainingの3つのカテゴリーに分けてtodoを追加することができます。この作品を通してReactを使用することによって、生のJavascriptでやってきたややこしいDOM操作をしなくてよくなるというReactの便利さを知ることができました。また、CRUDの基礎なども理解することができました。</p>
+            <ul>
+              <li><a target="_blank" href="https://todo-list-e1888.web.app/">Demo</a></li>
+              <li><a href="#">Github</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h2 class="item__ttl">使用言語など</h2>
+            <p>React, Firebase, Material-ui</p>
+          </div>
+        </div>
+        <div class="modal-content__body__img">
+          <p><img src="./img/todo.png"></p>
+        </div>
+        <i class="far fa-times-circle closeBtn" id="closeBtn4"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal5">
+    <div class="modal-content">
+      <div class="modal-content__body">
+        <div class="modal-content__body__txt">
+          <div class="item">
+            <h2 class="item__ttl">Movie App</h2>
+            <p>映画の情報を知ることのできるサイトです。TMDBが提供するAPIを利用して、映画の情報を人気や高評価などのカテゴリーに分けて取得して表示しています。また、検索の値によってもAPIを叩いてその結果が表示されるようにしてみました。ログイン機能をつけて自分のお気に入りの映画の公開日になったら通知するシステムやいいねボタンなどを作って行きたいと思っています。</p>
+            <ul>
+              <li><a target="_blank" href="https://share-movie-5577d.web.app/">Demo</a></li>
+              <li><a href="#">Github</a></li>
+            </ul>
+          </div>
+          <div class="item">
+            <h2 class="item__ttl">使用言語など</h2>
+            <p>React, Firebase, Material-ui, Tmdb</p>
+          </div>
+        </div>
+        <div class="modal-content__body__img">
+          <p><img src="./img/movie.png"></p>
+        </div>
+        <i class="far fa-times-circle closeBtn" id="closeBtn5"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="l-inner">
+      <h2 class="ttl">Contact</h2>
+      <p class="comm">最後までご覧いただきありがとうございました。<br>このサイトを通して、私のことを少しでも知っていただけたら嬉しいです。<br>まだまだ技術的には低いですがこれからも学び続けて成長していきたいと思っております。<br>何か連絡がございましたら連絡ください。</p>
+      <a class="email" href="mailto:gsh05196@yahoo.co.jp"><i class="far fa-envelope"></i>Message Me</a>
+    </div>
+  </section>
+
+  
+</body>
+</html>
