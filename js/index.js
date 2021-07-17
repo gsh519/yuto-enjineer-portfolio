@@ -199,8 +199,8 @@ const loaded = () => {
 }
 
 window.addEventListener("load", () => {
-  setTimeout(loaded)
-  
+  setTimeout(loaded, 2000)
 })
+
 
 
