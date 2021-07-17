@@ -505,11 +505,10 @@ $actionColor: #00affe;
 
 .card__textbox{
   width: 100%;
-  height: auto;
+  height: 145px;
   padding: 20px 18px;
   background: #ffffff;
   box-sizing: border-box;
-  min-height: 120px;
 }
 
 .card__textbox > * + *{
@@ -525,6 +524,7 @@ $actionColor: #00affe;
 .card__overviewtext{
   font-size: 12px;
   line-height: 150%;
+  text-align: left;
 }
 
 .card-skin{
